@@ -6,71 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Marta Perlinska // Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <!-- main logo / nav -->
-  <header>
+  <!-- main logo / nav-->
+  <section id="navBar"> 
     <h1>Marta Perlinska</h1>
-    <nav>
       <div id="navigation">
-        <p>About Me</p>
-        <p>Work</p>
-        <p>Contact Me</p>
-        <p>Resume</p>
+        <a href="#about">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#">Resume</a>
       </div>
-    </nav>
-  </header>
+    </section>
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
-      <h2>Archaeologist</h2>
-      <p>I dig code!</p>
-    </div>
+    <article id="backimage">
+      <article id="bannerText">
+        <h3>Archaeologist</h3>
+        <p>I dig code!</p>
+    </article>
+    <!-- <img id="Face">
+      <img src="../images/face.jpg" alt="Photo of Marta">Marta</img> -->
+    </article>
+    </article>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-      <p>Hello! My name is Marta, I am an archaeologist who also like coding. The two are not opposite! I am currently doing a Skills Bootcamp in front-end development. I hope this portfolio will expand as I gain more knowledge.</p>
+    <section id="abouttitle">
+        <h2>About Me</h2>
     </section>
+    <section id="abouttext">
+      <p>Hello! My name is Marta, I am an archaeologist who also like coding. The two are not opposite! I am currently doing a Skills Bootcamp in front-end development. I hope this portfolio will expand as I gain more knowledge.</p> 
+    </section>
+    
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <section id="worktitle">
+        <h2>Work</h2>    
     </section>
-        <div id="PreworkStudyGuide" class="workGrid">
+    <section class="workGrid">
+        <div id="PreworkStudyGuide">
           <a href="#">Prework Study Guide</a>
           <p>HTML/CSS</p>
         </div>
 
-        <div id="CodeRefactoring" class="workGrid">
+        <div id="CodeRefactoring">
           <a href="#">Code Refactoring</a>
           <p>HTML/CSS</p>
         </div>
 
-        <div id="Skellies" class="workGrid">
+        <div id="Skellies">
           <a href="#">Skellies</a>
           <p>Digdat/CSS</p>
         </div>
 
-        <div id="SunnySide" class="workGrid">
+        <div id="SunnySide">
           <a href="#">Sunny Side</a>
           <p>PHP</p>
         </div>
 
-        <div id="Calculator" class="workGrid">
+        <div id="Calculator">
           <a href="#">Calculator</a>
           <p>React/Java</p>
         </div>
-
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <section class="page-section" id="contact">
       <h2>Contact Me</h2>
     </section>
       <div class="footer">
