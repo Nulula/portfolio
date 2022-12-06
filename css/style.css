@@ -139,6 +139,7 @@ h2 {
 
 #abouttext {
   grid-area: "abouttext";
+  margin-left: 10%;
   display: flex;
   align-items: center;
   font-size: 15px;
@@ -165,12 +166,12 @@ h2 {
 }
 
 /* workGrid grid */
-.workGrid {
-  height: 500px;
+#workGrid {
+  height: 700px;
   display: grid;
   position: relative;
   width: 80%;
-  margin-right: 20%;
+  margin-right: 10%;
   margin-left: 0px;
   grid-template: repeat(4,1fr) / repeat(2,50%);
   column-gap: 5px;
@@ -182,49 +183,41 @@ h2 {
   "sunnyside calculator";
 }
 
-
-#PreworkStudyGuide,
-#CodeRefactoring,
-#Skellies,
-#SunnySide,
-#Calculator {
-  background-size: cover;
+.workGridarea {
+  display: block;
+  border: 3px rgb(174, 244, 100) solid;
   background-repeat: no-repeat;
-  object-fit: cover;
-  border: 4px solid rgb(174, 244, 100);  
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-
+  background-position: center;
+  background-size: auto;
 }
+
 
 #PreworkStudyGuide {
   grid-area: prework;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: URL("../images/02-portfolio-1.jpg");
   
 }
 
 #CodeRefactoring {
   grid-area: coderef;
-  background-image: url(../images/02-portfolio-5.jpg);
+  background-image: URL("../images/02-portfolio-5.jpg");
 
 }
 
 #Skellies {
   grid-area: skellies;
-  background-image: url(../images/Skellie.jpeg);
+  background-image: URL("../images/Skellie.jpg");
 }
 
 
 #SunnySide {
   grid-area: sunnyside;
-  background-image: url(../images/02-portfolio-6.jpg);
+  background-image: URL("../images/02-portfolio-6.jpg");
 }
 
 #Calculator {
   grid-area: calculator;
-  background-image: url(../images/02-portfolio-7.jpg);
+  background-image: URL("../images/02-portfolio-7.jpg");
 }
 
 #Skellies:hover,
@@ -236,22 +229,37 @@ h2 {
   opacity: 60%;
 }
 
-
-.text {
+#Skellies,
+#PreworkStudyGuide,
+#CodeRefactoring,
+#SunnySide,
+#Calculator
+ {
   text-decoration: none;
   color:#3e4444;
-  padding: 5px;
   background-color: rgb(174, 244, 100);
-  width: 168px;
-  height: 50px;
-  margin-bottom: 10px;
-
+  font-size: 14px;
+  text-align: right;
+  
 }
 
+#Skellies h3,
+#Skellies p,
+#PreworkStudyGuide h3,
+#CodeRefactoring h3,
+#SunnySide h3,
+#Calculator h3,
+#PreworkStudyGuide p,
+#CodeRefactoring p,
+#SunnySide p,
+#Calculator p
+ {
+  background-image: linear-gradient(to right, rgba(174, 244, 100,0.5), rgb(174, 244, 100)); 
+  padding: 5px;
+}
+
+
 .text a {
-  font-weight: bold;
-  text-decoration: none;
-  color:#3e4444;
   cursor: crosshair;
 
 }
@@ -262,7 +270,7 @@ h2 {
 .footer {
   display: flex;
   width: 100%;
-  margin-right: 10%;
+  margin-right: 00%;
   justify-content: space-around;
   align-items: center;
 
@@ -274,9 +282,11 @@ h2 {
   text-decoration: none;
   border-bottom: 3px solid #405d27;
   color:#405d27;
+
 }
 
 /* MEDIA */
+/*TABLETS*/
 @media screen and (max-width: 768px) {
 
   .page-wrapper {
@@ -295,7 +305,7 @@ h2 {
   border-right: none;
 }
 
-  .workGrid {
+  #workGrid {
     align-self: center;
     margin: right: 20%;
     margin-left: 20%;
@@ -335,4 +345,113 @@ h2 {
   }
 
   
+}
+
+/*PHONES*/
+@media screen and (max-width: 480px) {
+
+  #bannerText {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    height: 58px;
+    width: 120px;
+    background-color: rgb(174, 244, 100);
+    padding: 5px;
+   
+  }
+
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    text-align: left;
+  }  
+
+  #abouttitle,
+  #worktitle,
+  #contact {
+  border-bottom: 3px #3e4444 solid;
+  border-right: none;
+}
+
+  #workGrid {
+    height: 400px;
+    align-self: center;
+    margin: right: 20%;
+    margin-left: 20%;
+  }
+
+  #abouttext {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #navBar {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(174, 244, 100);
+  }
+  
+  #navBar h1 {
+    width: 100%;
+    margin-right: 0px;
+    padding-left: 0pxe;
+    margin-top: 6px;
+    justify-content: center;
+    text-align: center;
+
+  }
+  
+  #navigation {
+    margin-top: 5px;
+    background-color: #3e4444;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+
+
+  #Skellies,
+  #PreworkStudyGuide,
+  #CodeRefactoring,
+  #SunnySide,
+  #Calculator
+  {
+    font-size: 12px;
+}
+
+#Skellies h3,
+#Skellies p,
+#PreworkStudyGuide h3,
+#CodeRefactoring h3,
+#SunnySide h3,
+#Calculator h3,
+#PreworkStudyGuide p,
+#CodeRefactoring p,
+#SunnySide p,
+#Calculator p
+ {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#Face {
+  display: block;
+  align-items: center;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+#abouttext {
+  display: block;
+
+}
 }
