@@ -446,6 +446,8 @@ h2 {
 #Face {
   display: block;
   align-items: center;
+  padding: 0px;
+  margin: 0px;
   margin-right: 20%;
   margin-left: 20%;
 }
